@@ -1,15 +1,15 @@
-﻿spring: 
+﻿spring:
   profiles:
     active:
-    - dev
-    
+      - dev
+
 ---
 spring:
-  profiles:dev      #开发环境
+  profiles: dev      #开发环境
   application:
     name: spring-config-dev
 ---
 spring:
-  profiles:test       #测试环境
-  application:  
+  profiles: test       #测试环境
+  application:
     name: spring-config-test
