@@ -15,7 +15,7 @@ import java.io.IOException;
 public class Main {
     public static void main(String[] args) throws IOException {
         JestClientFactory factory = new JestClientFactory();
-//增加测试
+//增加测试2
         HttpClientConfig config = new HttpClientConfig.Builder("http://local1:9200").build();
         factory.setHttpClientConfig(config);
 
