@@ -18,7 +18,7 @@ public class Main {
         JestClientFactory factory = new JestClientFactory();
 //增加测试2
         HttpClientConfig config = new HttpClientConfig.Builder("http://local1:9200").build();
-
+//ads
         JestClient jestClient = factory.getObject();
         Index index = new Index.Builder("{\n" +
                 "      \"class_id\":\"191012\",\n" +
@@ -26,10 +26,7 @@ public class Main {
                 "}")
                 .build();
 
-
-        System.out.println("渣渣");
-        System.out.println("渣渣");
-        System.out.println("渣渣22");
+//啊啊啊啊
         System.out.println("渣渣");
         System.out.println("渣渣");
         DocumentResult execute = jestClient.execute(index);
@@ -37,8 +34,4 @@ public class Main {
 
     }
 
-    public void ts(){
-
-        System.out.println("caoaoao");
-    }
 }
