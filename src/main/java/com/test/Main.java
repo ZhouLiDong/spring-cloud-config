@@ -14,11 +14,10 @@ import java.io.IOException;
  */
 public class Main {
     public static void main(String[] args) throws IOException {
-        //原开始1行增加开始2
+        //原开始1行增加开始3
         JestClientFactory factory = new JestClientFactory();
 //增加测试2
         HttpClientConfig config = new HttpClientConfig.Builder("http://local1:9200").build();
-        factory.setHttpClientConfig(config);
 
         JestClient jestClient = factory.getObject();
         Index index = new Index.Builder("{\n" +
