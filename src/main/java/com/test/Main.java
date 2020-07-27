@@ -14,7 +14,7 @@ import java.io.IOException;
  */
 public class Main {
     public static void main(String[] args) throws IOException {
-        //原开始1行增加开始3
+        //原开始1行增加开始4
         JestClientFactory factory = new JestClientFactory();
 //增加测试2
         HttpClientConfig config = new HttpClientConfig.Builder("http://local1:9200").build();
@@ -31,7 +31,7 @@ public class Main {
                 .index("student")
                 .type("_doc")
                 .build();
-
+        System.out.println("渣渣");
         DocumentResult execute = jestClient.execute(index);
         System.out.println(execute.getJsonString());
 
