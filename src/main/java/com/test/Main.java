@@ -14,10 +14,10 @@ import java.io.IOException;
  */
 public class Main {
     public static void main(String[] args) throws IOException {
+        //原开始1行增加开始4
         JestClientFactory factory = new JestClientFactory();
-//增加测试
+//增加测试2
         HttpClientConfig config = new HttpClientConfig.Builder("http://local1:9200").build();
-        factory.setHttpClientConfig(config);
 
         JestClient jestClient = factory.getObject();
         Index index = new Index.Builder("{\n" +
@@ -28,10 +28,10 @@ public class Main {
                 "      \"score\":\"99.9\",\n" +
                 "      \"favo\":\"脚踩电灯泡乒乓球2\"\n" +
                 "}")
-                .index("student")
-                .type("_doc")
                 .build();
 
+
+        System.out.println("渣渣");
         DocumentResult execute = jestClient.execute(index);
         System.out.println(execute.getJsonString());
 
