@@ -14,7 +14,7 @@ import java.io.IOException;
  */
 public class Main {
     public static void main(String[] args) throws IOException {
-        //原开始1行增加开始4
+        //原开始1行增加开始4还修改了其他
         JestClientFactory factory = new JestClientFactory();
 //增加测试2
         HttpClientConfig config = new HttpClientConfig.Builder("http://local1:9200").build();
