@@ -28,9 +28,9 @@ public class Main {
                 "      \"score\":\"99.9\",\n" +
                 "      \"favo\":\"脚踩电灯泡乒乓球2\"\n" +
                 "}")
-                .index("student")
-                .type("_doc")
                 .build();
+
+
         System.out.println("渣渣");
         DocumentResult execute = jestClient.execute(index);
         System.out.println(execute.getJsonString());
