@@ -19,12 +19,6 @@ public class Main {
 //增加测试2
         HttpClientConfig config = new HttpClientConfig.Builder("http://local1:9200").build();
 //ads
-        JestClient jestClient = factory.getObject();
-        Index index = new Index.Builder("{\n" +
-                "      \"class_id\":\"191012\",\n" +
-                "      \"favo\":\"脚踩电灯泡乒乓球2\"\n" +
-                "}")
-                .build();
 
 //啊啊啊啊
         System.out.println("渣渣");
