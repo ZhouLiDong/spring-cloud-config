@@ -22,18 +22,23 @@ public class Main {
         JestClient jestClient = factory.getObject();
         Index index = new Index.Builder("{\n" +
                 "      \"class_id\":\"191012\",\n" +
-                "      \"name\":\"yulaoda\",\n" +
-                "      \"age\":\"20\",\n" +
-                "      \"sex\":\"male\",\n" +
-                "      \"score\":\"99.9\",\n" +
                 "      \"favo\":\"脚踩电灯泡乒乓球2\"\n" +
                 "}")
                 .build();
 
 
         System.out.println("渣渣");
+        System.out.println("渣渣");
+        System.out.println("渣渣22");
+        System.out.println("渣渣");
+        System.out.println("渣渣");
         DocumentResult execute = jestClient.execute(index);
         System.out.println(execute.getJsonString());
 
+    }
+
+    public void ts(){
+
+        System.out.println("caoaoao");
     }
 }
