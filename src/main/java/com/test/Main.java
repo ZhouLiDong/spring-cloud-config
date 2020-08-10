@@ -14,26 +14,24 @@ import java.io.IOException;
  */
 public class Main {
     public static void main(String[] args) throws IOException {
+        //原开始1行增加开始4还修改了其他
         JestClientFactory factory = new JestClientFactory();
-//增加测试
+//增加测试2
         HttpClientConfig config = new HttpClientConfig.Builder("http://local1:9200").build();
-        factory.setHttpClientConfig(config);
-
+//ads
         JestClient jestClient = factory.getObject();
         Index index = new Index.Builder("{\n" +
                 "      \"class_id\":\"191012\",\n" +
-                "      \"name\":\"yulaoda\",\n" +
-                "      \"age\":\"20\",\n" +
-                "      \"sex\":\"male\",\n" +
-                "      \"score\":\"99.9\",\n" +
                 "      \"favo\":\"脚踩电灯泡乒乓球2\"\n" +
                 "}")
-                .index("student")
-                .type("_doc")
                 .build();
 
+//啊啊啊啊
+        System.out.println("渣渣");
+        System.out.println("渣渣");
         DocumentResult execute = jestClient.execute(index);
         System.out.println(execute.getJsonString());
 
     }
+
 }
